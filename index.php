@@ -17,8 +17,9 @@
             
         }
 
-     
+        public function getProductDetails(){
+            return "Nome prodotto".$this->name.", prezzo: ".$this->price.", quantità disponibile ".$this->quantity;
+        }
      }
-
-   
+ 
 ?>
