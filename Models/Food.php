@@ -11,7 +11,7 @@
         public function setCalories ($_calories) {
             $this->calories = $_calories;
         }
-         public function setCalories () {
+         public function getCalories() {
             return $this->calories;
         }
 
