@@ -10,6 +10,13 @@ Cominciate a fare prima le classi. Per ogni classe creata, fate una o due istanz
 
 
 
+NEW TASK --------------------
+oggi continuate a lavorare nella stessa repo di ieri aggiungendo almeno un exception al vostro shop!
+nome repo di ieri: php-oop-2
+Bonus:
+Aggiungete almeno un Trait al vostro lavoro
+
+
 
 
 
