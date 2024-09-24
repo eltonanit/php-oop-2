@@ -15,14 +15,14 @@
      $products = [];
     
      try {
-          $product = new Product ('Collare', 'https://pawee.it/wp-content/uploads/2022/07/WhatsApp-Image-2022-07-06-at-13.59.57.jpeg', 12.00, 20, true, $dogs);
+          $product = new Product ('Collare', 'https://pawee.it/wp-content/uploads/2022/07/WhatsApp-Image-2022-07-06-at-13.59.57.jpeg', 'vcgv', 20, true, $dogs);
           $product->description = "Lorem ipsum ";
           $products [] = $product;
 
 
      }
      catch (Exception $ex) {
-      echo "----ERRORE----".$ex->getMessage();
+      $error_product = "----ERRORE----".$ex->getMessage();
      }
  
     $food = new Food('Mais','https://www.verdepiusnc.it/wp-content/uploads/2016/06/Sweet-Corn.jpg' , 9.00, 30,true, $dogs );
