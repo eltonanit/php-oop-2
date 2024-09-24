@@ -1,25 +1,41 @@
 <?php
-     class Product {
-        public $name;
-        public $price;
-        public $image;
-        public $quantity;
-        public $category;
-        public $description;
-
-        function __construct($_name, $_price, $_image, $_quantity = 10, Category $_category, $_description){
-            $this->name = $_name;
-            $this->image = $_image;
-            $this->price = $_price;
-            $this->quantity = $_quantity;
-            $this->category = $_category;
-            $this->description = $_description;
-            
-        }
-
-        public function getProductDetails(){
-            return "Nome prodotto".$this->name.", prezzo: ".$this->price.", quantità disponibile ".$this->quantity;
-        }
-     }
+ require_once __DIR__.'/db.php';
  
 ?>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    
+    <title>OOP 2 </title>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <h2 class="text-center"></h2>
+            </div>
+        </div>
+        <div class="row">
+            <?php foreach($products as $product) { ?>
+            <div class="col-12 col-md-6 col-lg-3">
+                <div class="card">
+                    <img src="<?php echo $product->image;?>" class="img-fluid" alt="<?php $product->name; ?>">
+                     <div class="card-body">
+                        <h5 class="card-title"><?php echo $product->name; ?></h5>
+                        <p class="card-text"> Esempio testo </p>
+                     </div>
+                </div>
+            </div>
+            <?php } ?>
+            
+        </div>
+    </div>
+    
+</body>
+</html>
