@@ -1,6 +1,6 @@
 <?php
      require_once __DIR__.'/db.php'; 
-     
+
 ?>
 
 <!DOCTYPE html>
@@ -28,7 +28,8 @@
                     <img src="<?php echo $product->image;?>" class="img-fluid" alt="<?php $product->name; ?>">
                      <div class="card-body">
                         <h5 class="card-title"><?php echo $product->name; ?></h5>
-                        <p class="card-text"> Esempio testo </p>
+                        <p class="card-text"> 
+                            <strong>Categoria:   </strong><i class="<?php echo $product->category->icon; ?>"></i>    </p>
                      </div>
                 </div>
             </div>
