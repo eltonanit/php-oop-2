@@ -10,7 +10,7 @@
      
 
      $dogs = new Category ('Cane', 'fa-solid fa-dog');
-     $cats = new Category ('Gatto', 'fa-solid fa-dog');
+     $cats = new Category ('Gatto', 'fa-solid fa-cat');
      
      $product = new Product ('Collare', 'https://pawee.it/wp-content/uploads/2022/07/WhatsApp-Image-2022-07-06-at-13.59.57.jpeg', 12.00, 20, true, $dogs);
      $product->description = "Lorem ipsum ";
