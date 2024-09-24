@@ -33,7 +33,7 @@
                         <p class="card-text">
                             <strong>Categoria: </strong><i class="<?php echo $product->category->icon; ?>"></i>
                         </p>
-                        <p>Tipologia prodotto:</p>
+                        <p>Tipologia pr odotto:</p>
                         
                         </p>
                         <p><?php echo $product->getProductDetails(); ?></p>
