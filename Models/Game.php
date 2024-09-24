@@ -1,11 +1,11 @@
 <?php
-     require_once __DIR__.'Product.php';
+     require_once __DIR__.'/Product.php';
 
      class Game extends Product {
         protected $material; 
 
-        function __construct($_name, $_price, $_image, $_quantity = 10, Category $_category, $_description){
-            parent::__construct($_name, $_image, $_price, $_quantity, $_catwgory);
+        function __construct($_name, $_image, $_price, $_quantity, $available, Category $_category){
+            parent::__construct($_name, $_image, $_price, $_quantity, $available, $_category);
         
         }
         public function setMaterial ($_material) {
