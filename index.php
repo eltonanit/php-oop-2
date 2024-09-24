@@ -1,6 +1,6 @@
 <?php
- require_once __DIR__.'/db.php';
- 
+     require_once __DIR__.'/db.php'; 
+     
 ?>
 
 <!DOCTYPE html>
@@ -18,7 +18,7 @@
     <div class="container">
         <div class="row">
             <div class="col-12">
-                <h2 class="text-center"></h2>
+                <h2 class="text-center">ESERCIZIO OOP - PRODOTTI</h2>
             </div>
         </div>
         <div class="row">
